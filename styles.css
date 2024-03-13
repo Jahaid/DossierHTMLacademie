@@ -818,7 +818,7 @@ label p{
 
 #modal{
     position:fixed;
-    visibility: hidden;
+    visibility:visible;
     top:0;
     left:0;
     bottom: 0;
@@ -873,7 +873,7 @@ label p{
 }
 #modal form .firstlabel{
     position: relative;
-    left: 18px;
+    left: 0;
     top: -5px;
     font-size: 16px;
     font-weight: 400;
@@ -883,7 +883,7 @@ label p{
 #modal form .label{
     color: rgba(51, 51, 51, 1);
     position: relative;
-    left: 50px;
+    left: 30px;
     top: -5px;
 }
 
@@ -898,21 +898,12 @@ label p{
     margin-top: 40px;
     margin-left: 80px;
 }
-#modal:target{
-    visibility:visible;
-  }
   .form-block{
     display: flex;
     align-items: center;
-    padding-left: 70px;
+    padding-left: 50px;
     margin-top: 25px;
     
-  }
-  .form-block h2{
-    font-size: 18px;
-    font-weight: 700;
-    line-height: 40px;
-    color: rgba(0, 0, 0, 1);
   }
   .form-name{
     font-size: 18px;
@@ -927,7 +918,6 @@ label p{
 
 }
 .compteur{
-   background-color: #000;
    display: flex;
    justify-content: space-around;
    align-items: center;
@@ -940,8 +930,15 @@ label p{
    margin-left: 86px;
 
 }
+.compteur .nombre{
+    color: 
+    rgba(0, 0, 0, 1);
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 40px;
+}
 .dis{
-    margin-left: 40px;
+    margin-left: 20px;
 }
 .btn-close{
     position: absolute;
@@ -953,6 +950,39 @@ label p{
     width: 53px;
     height: 53px;
     color:  rgba(0, 0, 0, 1);
+}
+.cercle{
+    position: relative;
+    width: 25px;
+    height: 25px;
+    background-color: rgba(131, 179, 211, 1);
+    border-radius: 100%;
+    border: none;
+    margin-left: 14px;
+    padding-bottom: 40px;
+}
+.cercle::after{
+    content: "Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.";
+    width: 256px;
+    height: 143px;
+    color: rgba(255, 255, 255, 1);
+    display: inline-block;
+    padding-top: 25px;
+    padding-left: 22px;
+    padding-right: 18px;
+
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    background-color: rgba(51, 51, 51, 1);
+    box-shadow: 0px 15px 30px 0px rgba(0, 0, 0, 0.3);
+
+    position: absolute;
+    top: 40px;
+    right: -110px;
+    clip-path: polygon(51% 0, 57% 8%, 
+        100% 8%, 100% 100%, 0 100%, 0 8%, 44% 8%);
+
 }
 
 
