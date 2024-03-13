@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Барбершоп</title>
+    <title>Седона</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
@@ -117,7 +117,7 @@
         <div class="sect_container">
             <h2>Заинтересовались?</h2>
         <p>Укажите предполагаемые даты поездки,</br> и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-        <button class="search_btn">ПОИСК ГОСТИНИЦЫ В СЕДОНЕ</button>
+        <a href="#modal" class="search_btn">ПОИСК ГОСТИНИЦЫ В СЕДОНЕ</a>
         </div>
     </section>
     <section class="dist_content">
@@ -132,6 +132,43 @@
               </form>
         </div>
     </section>
+    <div id="modal">
+        <div class="content">
+            <form action="">
+                <h1>Поиск гостиницы в Седоне</h1>
+                <div class="form-block">
+                    <h2 class="form-name">Дата заезда:</h2>
+                    <input value=" " type="date">
+                </div>
+                <label class="firstlabel">Мы не можем отправить вас в прошлое.</label>
+                <div class="form-block">
+                    <h2 class="form-name">Дата выезда:</h2>
+                    <input value=" " type="date">
+                </div>
+                <label class="firstlabel label">На эти даты есть свободные номера. Пока есть.</label>
+                <div class="compteur-form ">
+                    <div class="form-block">
+                        <h2 class="form-name">Взрослые:</h2>
+                        <div class="compteur">
+                            <img src="images/moin.svg" alt="">
+                            <h2 class="nombre">2</h2>
+                            <img src="images/plus.svg" alt="">
+                        </div>
+                    </div>
+                    <div class="form-block">
+                        <h2 class="form-name">Дети:</h2>
+                        <div class="compteur dis">
+                            <img src="images/moin.svg" alt="">
+                            <h2 class="nombre">1</h2>
+                            <img src="images/plus.svg" alt="">
+                        </div>
+                    </div>
+                </div>
+                <input value="Найти" type="submit">
+            </form>
+            <button class="btn-close">x</button>
+        </div>
+    </div>
     <footer class="footer">
         <div class="social_icon">
             <a href="https://www.facebook.com/htmlacademy">
@@ -153,5 +190,6 @@
                </a> 
         </div>
     </footer>
+    
 </body>
 </html>
